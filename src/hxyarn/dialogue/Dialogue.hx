@@ -188,6 +188,10 @@ class Dialogue implements IAttributeMarkerProcessor {
 		vm.setSelectedOption(selectedOptionId);
 	}
 
+	public function get_executionState(){
+		return vm.executionState;
+	}
+
 	public function resume() {
 		if (vm.executionState == ExecutionState.Running)
 			return;
